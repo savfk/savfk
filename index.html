@@ -15,7 +15,7 @@
     <title>Cambiami</title>
   </head>
 
-  <body>
+  <body onload="foo()">
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -62,12 +62,17 @@
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <script>
+   function foo() {
+     var x = document.getElementById("myDIV");
+     x.style.display = "block";
+   }
+  
   function onYtEvent(payload) {
     var x = document.getElementById("myDIV");
     if (payload.eventType == 'subscribe') {
-      x.style.display = "block";
+      //x.style.display = "block";
     } else if (payload.eventType == 'unsubscribe') {
-      x.style.display = "block";
+     // x.style.display = "block";
     }
     if (window.console) { // for debugging only
       window.console.log('YT event: ', payload);
