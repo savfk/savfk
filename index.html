@@ -62,11 +62,10 @@
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <script>
- 
   function onYtEvent(payload) {
     var x = document.getElementById("myDIV");
     if (payload.eventType == 'subscribe') {
-      x.style.display = "none";
+      x.style.display = "block";
     } else if (payload.eventType == 'unsubscribe') {
       x.style.display = "block";
     }
