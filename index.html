@@ -41,6 +41,10 @@
 <p>Just trying to get a hang on GitHub Pages...</p>
       </section>
     </div>
+    
+    <div id="myDIV">
+  This is my DIV element.
+</div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
@@ -54,11 +58,13 @@
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <script>
+ 
   function onYtEvent(payload) {
+    var x = document.getElementById("myDIV");
     if (payload.eventType == 'subscribe') {
-      // Add code to handle subscribe event.
+      x.style.display = "none";
     } else if (payload.eventType == 'unsubscribe') {
-      // Add code to handle unsubscribe event.
+      x.style.display = "block";
     }
     if (window.console) { // for debugging only
       window.console.log('YT event: ', payload);
