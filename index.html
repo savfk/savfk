@@ -40,7 +40,7 @@
 
 <p>Just trying to get a hang aaaaaaaaaa on GitHub Pages...</p>
         
-        <div class="g-ytsubscribe" data-channelid="UCXlppUGWeGtHBp_1xKsawmQ" data-layout="full" data-count="default" data-onytevent="onYtEvent"></div>
+        <div class="g-ytsubscribe" data-channelid="UCXlppUGWeGtHBp_1xKsawmQ" data-layout="full" data-count="default" data-onytevent="addSubscription"></div>
         
         
       </section>
@@ -78,6 +78,31 @@
       window.console.log('YT event: ', payload);
     }
   }
+  
+  function addSubscription() {
+  // Replace this channel ID with the channel ID you want to subscribe to
+  var channelId = 'UCXlppUGWeGtHBp_1xKsawmQ';
+  var resource = {
+    snippet: {
+      resourceId: {
+        kind: 'youtube#channel',
+        channelId: channelId
+      }
+    }
+  };
+
+  try {
+    var response = YouTube.Subscriptions.insert(resource, 'snippet');
+    Logger.log(response);
+  } catch (e) {
+    if(e.message.match('subscriptionDuplicate')) {
+      Logger.log('Cannot subscribe; already subscribed to channel: ' + channelId);
+    } else {
+      Logger.log('Error adding subscription: ' + e.message);
+    }
+  }
+}
+  
 </script>
 
 
