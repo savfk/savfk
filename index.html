@@ -15,7 +15,17 @@
     <title>Savfk - Music</title>
   </head>
 
-  <body onload="foo()">
+  <body>
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=510046382662960';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -33,21 +43,10 @@
   <p>...but before you do, follow me on Soundcloud:</p>
         <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337813533&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
   <p>...subscribe to my YouTube channel:</p>      
-        <div class="g-ytsubscribe" data-channelid="UCXlppUGWeGtHBp_1xKsawmQ" data-layout="full" data-count="default" data-onytevent="onYtEvent"></div>
-  
-  <p>...subscribe to my YouTube channel again:</p>        
-   <!-- Start of Youtube Subscription Box Embed Code -->
-<iframe frameborder="0" id="fr" scrolling="no" 
-src="https://www.youtube.com/subscribe_widget?p=XlppUGWeGtHBp_1xKsawmQ" 
-style="border: 0px; height: 100px; background:#FFF; overflow-x: hidden; 
-overflow-y: hidden; width: 300px;"></iframe>
-<!-- End of Youtube Subscription Box Embed Code -->     
-        
-        
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" data-channelid="UCXlppUGWeGtHBp_1xKsawmQ" data-layout="default" data-count="default"></div>  
         <p>...and like my Facebook page:</p>   
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsavfkmusic%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=510046382662960" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-     
-   <p>...I would also appreciate if you could share some of my music on your social media!</p>  
     <p>...Oh, and if you wish to donate, donations are (very) (very!) welcome..! You can donate by clicking here:</p>         
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -55,12 +54,11 @@ overflow-y: hidden; width: 300px;"></iframe>
 <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
-        
- <div id="myDIV">
   <p>You can download the track <a href="https://github.com/thatsmood/thatapp/zipball/master">here</a>. </p>
-</div>
-      
-            </section>
+ <p>...And while you are downloading, I would really appreciate if you could share my music on your social media. It is very easy, just click here!
+        <div class="fb-share-button" data-href="https://youtu.be/8A4Jak73Lao" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyoutu.be%2F8A4Jak73Lao&amp;src=sdkpreparse">Share</a></div>
+        </p>     
+ </section>
     </div>
     
 
@@ -73,52 +71,6 @@ overflow-y: hidden; width: 300px;"></iframe>
     </div>
 
     
-<script src="https://apis.google.com/js/platform.js"></script>
-
-<script>
-   function foo() {
-     var x = document.getElementById("myDIV");
-     x.style.display = "none";
-   }
-  
-  function onYtEvent(payload) {
-    var x = document.getElementById("myDIV");
-    if (payload.eventType == 'subscribe') {
-      x.style.display = "block";
-    } else if (payload.eventType == 'unsubscribe') {
-     // x.style.display = "block";
-    }
-    if (window.console) { // for debugging only
-      window.console.log('YT event: ', payload);
-    }
-  }
-  
-  function addSubscription() {
-  // Replace this channel ID with the channel ID you want to subscribe to
-  var channelId = 'UCXlppUGWeGtHBp_1xKsawmQ';
-  var resource = {
-    snippet: {
-      resourceId: {
-        kind: 'youtube#channel',
-        channelId: channelId
-      }
-    }
-  };
-
-  try {
-    var response = YouTube.Subscriptions.insert(resource, 'snippet');
-    Logger.log(response);
-  } catch (e) {
-    if(e.message.match('subscriptionDuplicate')) {
-      Logger.log('Cannot subscribe; already subscribed to channel: ' + channelId);
-    } else {
-      Logger.log('Error adding subscription: ' + e.message);
-    }
-  }
-}
-  
-</script>
-
 
 
   </body>
