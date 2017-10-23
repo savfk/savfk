@@ -66,26 +66,13 @@ footer {
  min-height: 100px;
 }
 
-.g-ytsubscribe {
-    zoom: 2;  //increase if you have very small images
-
-    display: block;
-    margin: auto;
-
-    height: auto;
-    max-height: 100%;
-
-    width: auto;
-    max-width: 100%;
-}
-
 .google-maps {
     position: relative;
     padding-bottom: 90%; // (450 ÷ 500 = 0.9 = 90%)
     height: 0;
     overflow: hidden;
 }
-.google-maps iframe {
+.google-maps .g-ytsubscribe {
     position: absolute;
     top: 0;
     left: 0;
