@@ -63,12 +63,7 @@ footer {
 }
 
 #ytbutton {
-  top:0;
-  left: 0;
-  position: absolute;
-  overflow: hidden;
  min-height: 100px;
-  width: 30%;
 }
  
 
