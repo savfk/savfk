@@ -62,25 +62,6 @@ footer {
     color: #fff;
 }
 
-#ytbutton {
- min-height: 100px;
-}
-
-.google-maps {
-    position: relative;
-    padding-bottom: 90%; // (450 ÷ 500 = 0.9 = 90%)
-    height: 0;
-    overflow: hidden;
-}
-.google-maps .g-ytsubscribe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
- 
-
 /* Responsive - Media queries */
 
 @media screen and (max-width: 640px) {
