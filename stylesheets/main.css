@@ -1,0 +1,75 @@
+/**
+ * Savfk - Style
+ * Author: Ginestra Ferraro - https://github.com/ginestra
+ *
+ * Main CSS style
+ */
+
+/* Global */
+
+body {
+    background: #212121;
+    box-sizing: border-box;
+    color:#373737;
+    font-family: 'Myriad Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007edf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.column {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.light {
+    background: #f2f2f2;
+}
+
+.row {
+    margin: 0;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    background: url("../images/channelart2.png") center center;
+    background-size: cover;
+    min-height: 240px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    color: #fff;
+}
+
+/* Responsive - Media queries */
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 19px;
+    }
+
+    header {
+        min-height: 100px;
+    }
+}
