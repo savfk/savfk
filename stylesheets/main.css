@@ -63,8 +63,20 @@ footer {
 }
 
 #ytbutton {
- zoom: 2;
  min-height: 100px;
+}
+
+.g-ytsubscribe {
+    zoom: 2;  //increase if you have very small images
+
+    display: block;
+    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
 }
  
 
