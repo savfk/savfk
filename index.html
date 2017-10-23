@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="author" content="Savfk - Music">
     <meta name="description" content="Savfk - Music">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
     <title>Savfk - Music</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
-    
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=510046382662960';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-    
-    
-    <script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=510046382662960';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+    <script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <img src="images/channelart2.png" alt="logo" />
-        </header>
+    <div class="row">
+      <header>
+        <h1>Savfk Music</h1>
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="whatever-this-is-is-going-to-be-opensource" class="anchor" href="#whatever-this-is-is-going-to-be-opensource" aria-hidden="true"><span class="octicon octicon-link"></span></a>You can download this track absolutely for free</h3>
+    <div class="row light">
+      <section class="column light">
+        <h2>
+          You can download this track absolutely for free
+        </h2>
 
-  <p>...but before you do, follow me on Soundcloud:</p>
+        <p>...but before you do, follow me on Soundcloud:</p>
         <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337813533&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-  <p>...subscribe to my YouTube channel:</p>      
-<script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-ytsubscribe" data-channelid="UCXlppUGWeGtHBp_1xKsawmQ" data-layout="default" data-count="default"></div>  
-        <p>...and like my Facebook page:</p>   
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsavfkmusic%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=510046382662960" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-    <p>...Oh, and if you wish to donate, donations are (very) (very!) welcome..! You can donate by clicking here:</p>         
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="427SCHV94A3BE">
-<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
-  <p>You can download the track <a href="https://github.com/thatsmood/thatapp/zipball/master">here</a>. </p>
- <p>...And while you are downloading, I would really appreciate if you could share my music on your social media. It is very easy, just click here!
- <p><div class="fb-share-button" data-href="https://youtu.be/8A4Jak73Lao" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyoutu.be%2F8A4Jak73Lao&amp;src=sdkpreparse">Share</a></div></p>
-  
- <p> <a class="twitter-share-button"
-  href="https://twitter.com/share"
-  data-size="large"
-  data-text="Check out this amazing song now! "
-  data-url="https://youtu.be/8A4Jak73Lao"
-  data-hashtags="savfk,music,soundtrack"
-  Tweet
-  </a>  </p>  
- </section>
-  </div>
-    
+        <p>...subscribe to my YouTube channel:</p>  
 
+        <script src="https://apis.google.com/js/platform.js"></script>
+
+        <div class="g-ytsubscribe" data-channelid="UCXlppUGWeGtHBp_1xKsawmQ" data-layout="default" data-count="default"></div>
+
+        <p>...and like my Facebook page:</p>   
+        
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsavfkmusic%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=510046382662960" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+        <p>...Oh, and if you wish to donate, donations are (very) (very!) welcome..! You can donate by clicking here:</p>         
+        
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="427SCHV94A3BE">
+          <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <p>You can download the track <a href="https://github.com/thatsmood/thatapp/zipball/master">here</a>.</p>
+
+        <p>...And while you are downloading, I would really appreciate if you could share my music on your social media. It is very easy, just click here!</p>
+        
+        <p>
+          <div class="fb-share-button" data-href="https://youtu.be/8A4Jak73Lao" data-layout="button" data-size="large" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyoutu.be%2F8A4Jak73Lao&amp;src=sdkpreparse">Share</a>
+          </div>
+        </p>
+
+        <p>
+          <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-text="Check out this amazing song now!"
+          data-url="https://youtu.be/8A4Jak73Lao" data-hashtags="savfk,music,soundtrack">Twitter</a>
+        </p>  
+      </section>
+    </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+    <div class="row">
+      <footer class="column">
         <p class="copyright">Thatapp maintained by <a href="https://github.com/thatsmood">thatsmood</a></p>
       </footer>
     </div>
-
-    
-
-
   </body>
 </html>
