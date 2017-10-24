@@ -1,0 +1,7 @@
+# Graphics
+*.ai
+*.psd
+*.tiff
+
+# MacOS
+.DS_Store
