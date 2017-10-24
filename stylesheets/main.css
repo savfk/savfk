@@ -46,7 +46,7 @@ a:hover {
 /* Header */
 
 header {
-    background: url("../images/channelart2.png") center center;
+    background: url("../images/keyboard.jpg") center center;
     background-size: cover;
     min-height: 240px;
     width: 100%;
@@ -54,6 +54,13 @@ header {
 
 header h1 {
     margin: 0;
+    padding: 24px 0 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 400px;
+    opacity: .8;
 }
 
 /* Footer */
