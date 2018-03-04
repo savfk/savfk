@@ -54,13 +54,13 @@ header {
 
 header h1 {
     margin: 0;
-    padding: 24px 0 0;
+    padding: 38px 0 0;
     text-align: center;
 }
 
 header .logo img {
-    max-height: 200px;
-    opacity: .8;
+    max-height: 170px;
+    /* opacity: .8; */
 }
 
 /* Footer */
