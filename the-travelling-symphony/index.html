@@ -112,11 +112,15 @@
       }(document, "script", "twitter-wjs")); 
     </script>
 	  
-    <script>
-     function downloadMyFile() {
-     window.open("http://bit.ly/2NbQDwx","_self");
-     }
-     </script>	  
+
+	  
+     <iframe id="my_iframe" style="display:none;"></iframe>
+     <script>
+	function downloadMyFile() {
+	    document.getElementById('my_iframe').src = "http://bit.ly/2NbQDwx";
+	};
+     </script>
+	  
 
     <script src="https://apis.google.com/js/platform.js"></script>
 
